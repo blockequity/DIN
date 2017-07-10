@@ -1,0 +1,278 @@
+{
+  "contract_name": "DINRegistry",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "DIN",
+          "type": "uint256"
+        }
+      ],
+      "name": "resolver",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "registerNewDINFor",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "DIN",
+          "type": "uint256"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "DIN",
+          "type": "uint256"
+        }
+      ],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "registerNewDIN",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "DIN",
+          "type": "uint256"
+        },
+        {
+          "name": "resolver",
+          "type": "address"
+        }
+      ],
+      "name": "setResolver",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "genesis",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "DIN",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "NewRegistration",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "DIN",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "NewOwner",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "DIN",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "resolver",
+          "type": "address"
+        }
+      ],
+      "name": "NewResolver",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b60405160208061035a83398101604052515b60018190555b505b610325806100356000396000f3006060604052361561005c5763ffffffff60e060020a600035041663108eaa4e811461005e578063168a6e071461008d5780637fd39247146100ab578063a123c33e146100cc578063b1337747146100fb578063bc7b6d621461010d575bfe5b341561006657fe5b61007160043561012e565b60408051600160a060020a039092168252519081900360200190f35b341561009557fe5b6100a9600160a060020a036004351661014f565b005b34156100b357fe5b6100a9600435600160a060020a036024351661015c565b005b34156100d457fe5b6100716004356101e2565b60408051600160a060020a039092168252519081900360200190f35b341561010357fe5b6100a9610200565b005b341561011557fe5b6100a9600435600160a060020a036024351661020c565b005b600081815260208190526040902060010154600160a060020a03165b919050565b61015881610295565b5b50565b600082815260208190526040902054829033600160a060020a039081169116146101865760006000fd5b6000838152602081905260408082208054600160a060020a031916600160a060020a0386169081179091559051909185917f4c5d8ccfd4f32dad0c449108334c94e0bada87b1453ad71e79e233545f4c48a69190a35b5b505050565b600081815260208190526040902054600160a060020a03165b919050565b61020933610295565b5b565b600082815260208190526040902054829033600160a060020a039081169116146102365760006000fd5b6000838152602081905260408082206001018054600160a060020a031916600160a060020a0386169081179091559051909185917fcbae0978f0621ebb4707a96540f8d3a937104526ceef2cdf1cf07b25c5e48cd49190a35b5b505050565b600180548101908190556000818152602081905260408082208054600160a060020a031916600160a060020a0386169081179091559051909183917fef8ea3d0ef6bf7f673a09aa675838d76573d86e5a9fc235846ac3f54195d72179190a35b50505600a165627a7a72305820350aebb1606de8b3f67e163f4c2eb9c3f29726f5c0cf6b1258267007a0ef7fc40029",
+  "networks": {
+    "1499447775188": {
+      "events": {
+        "0xef8ea3d0ef6bf7f673a09aa675838d76573d86e5a9fc235846ac3f54195d7217": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "DIN",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            }
+          ],
+          "name": "NewRegistration",
+          "type": "event"
+        },
+        "0x4c5d8ccfd4f32dad0c449108334c94e0bada87b1453ad71e79e233545f4c48a6": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "DIN",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        },
+        "0xcbae0978f0621ebb4707a96540f8d3a937104526ceef2cdf1cf07b25c5e48cd4": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "DIN",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "resolver",
+              "type": "address"
+            }
+          ],
+          "name": "NewResolver",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x02cc35085626a06b6ee7795cefe3bfed9f4313d5",
+      "updated_at": 1499447779061
+    },
+    "1499707707776": {
+      "events": {
+        "0xef8ea3d0ef6bf7f673a09aa675838d76573d86e5a9fc235846ac3f54195d7217": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "DIN",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            }
+          ],
+          "name": "NewRegistration",
+          "type": "event"
+        },
+        "0x4c5d8ccfd4f32dad0c449108334c94e0bada87b1453ad71e79e233545f4c48a6": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "DIN",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            }
+          ],
+          "name": "NewOwner",
+          "type": "event"
+        },
+        "0xcbae0978f0621ebb4707a96540f8d3a937104526ceef2cdf1cf07b25c5e48cd4": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "DIN",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "resolver",
+              "type": "address"
+            }
+          ],
+          "name": "NewResolver",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1fc05147ac6fad78bd3a4f958cf65278b35e68b7",
+      "updated_at": 1499721465934
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1499721465934
+}
