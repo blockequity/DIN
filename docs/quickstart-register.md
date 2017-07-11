@@ -22,7 +22,7 @@ var callback = function(error, result) {
 
 Get notified when a registration event happens
 ```javascript
-var event = registry.NewRegistration()
+var event = registry.NewRegistration({owner: web3.eth.accounts[0]})
 event.watch(callback)
 ```
 
