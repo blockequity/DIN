@@ -1,5 +1,5 @@
 # DIN
-A Distributed Identification Number (DIN) is a globally unique number that is short enough to be encoded into a 1-dimensional barcode. Because they are unique, DINs can be used as product identiers similar to UPC, EAN, and ISBN standards.
+A Distributed Identification Number (DIN) is a globally unique number that is short enough to be encoded into a 1-dimensional barcode. Because they are unique, DINs can be used as product identiers similar to [UPC](https://en.wikipedia.org/wiki/Universal_Product_Code), [EAN](https://en.wikipedia.org/wiki/International_Article_Number), and [ISBN](https://en.wikipedia.org/wiki/International_Standard_Book_Number) standards.
 
 DINs can also be used to store and look up product information on the public Ethereum blockchain, using a simple three-step process:
 * Register a new DIN using the `DINRegistry.sol` smart contract.
